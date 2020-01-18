@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+        <item
+            android:id="@+id/navigation_map"
+            android:icon="@drawable/ic_map"
+            android:title="Karte"/>
+
+        <item
+            android:id="@+id/navigation_melden"
+            android:icon="@drawable/ic_melden"
+            android:title="Melden"/>
+
+</menu>

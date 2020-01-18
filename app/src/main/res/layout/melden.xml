@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/colorPrimary">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="56dp"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:backgroundTint="@color/white"
+            android:foregroundTint="@color/white"
+            android:textColorHint="@color/white">
+
+            <EditText
+                android:id="@+id/input_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/white"
+                android:drawableLeft="@drawable/ic_car"
+                android:foregroundTint="@color/white"
+                android:textColor="@color/white"
+                android:hint="Kennzeichen"
+                android:inputType="textEmailAddress" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TableRow>
+                <TextView android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white" android:text="Parkplatz"></TextView>
+
+                <androidx.appcompat.widget.AppCompatSpinner
+                    android:id="@+id/spinner_parkplatz"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:foregroundTint="@color/white"
+                    android:backgroundTint="@color/white"></androidx.appcompat.widget.AppCompatSpinner>
+            </TableRow>
+        </TableLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:backgroundTint="@color/white"
+            android:foregroundTint="@color/white"
+            android:textColorHint="@color/white">
+
+            <EditText
+                android:id="@+id/verstoß"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/white"
+                android:drawableLeft="@drawable/ic_melden_light"
+                android:foregroundTint="@color/white"
+                android:hint="Verstoß"
+                android:textColor="@color/white"
+                android:inputType="textEmailAddress" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <!-- Email Label -->
+
+
+        <!-- Signup Button -->
+        <Button
+            android:id="@+id/btn_signup"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="24dp"
+            android:padding="12dp"
+            android:text="Melden"
+            android:background="#324484"
+            android:textColor="@color/white"/>
+
+
+    </LinearLayout>
+</ScrollView>
